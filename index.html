@@ -1,72 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ç‚å®å›åº”å®¤</title>
-  <style>
-    body {
-      background-color: #fff0f5;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      padding: 20px;
-      color: #333;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      border: 3px dashed #ff69b4;
-      border-radius: 20px;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 0 20px #ffe4e1;
-    }
-    h1 {
-      text-align: center;
-      color: #ff1493;
-    }
-    input, button, textarea {
-      display: block;
-      width: 100%;
-      margin-top: 10px;
-      padding: 10px;
-      border-radius: 8px;
-      border: 2px solid #ffb6c1;
-    }
-    button {
-      background-color: #ff69b4;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .response {
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #f8f0fa;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ñ×±¦»ØÓ¦ÊÒ</title>
+<style>
+body {
+background-color: #fff0f5;
+font-family: 'Comic Sans MS', cursive, sans-serif;
+padding: 20px;
+color: #333;
+}
+.container {
+max-width: 600px;
+margin: 0 auto;
+border: 3px dashed #ff69b4;
+border-radius: 20px;
+padding: 20px;
+background: #fff;
+box-shadow: 0 0 20px #ffe4e1;
+}
+h1 {
+text-align: center;
+color: #ff1493;
+}
+input, button, textarea {
+display: block;
+width: 100%;
+margin-top: 10px;
+padding: 10px;
+border-radius: 8px;
+border: 2px solid #ffb6c1;
+}
+button {
+background-color: #ff69b4;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+.response {
+margin-top: 20px;
+padding: 15px;
+background-color: #f8f0fa;
+border: 1px solid #ddd;
+border-radius: 10px;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>ğŸ±ğŸ°ğŸ¶ çµå®çš„å°åŠ¨ç‰©æƒ…ç»ªæ”¯æ´å›¢ä¸Šçº¿å•¦ï¼</h1>
-    <textarea id="userInput" rows="3" placeholder="ä½ åœ¨æƒ³ä»€ä¹ˆå‘¢"></textarea>
-    <button onclick="getResponse()">å‘é€ç»™ç‚å®</button>
-    <div id="response" class="response" style="display:none;"></div>
-  </div>
-  <script>
-    async function getResponse() {
-      const input = document.getElementById("userInput").value;
-      const responseBox = document.getElementById("response");
-      responseBox.style.display = "block";
-      responseBox.innerText = "ç‚å®æ­£åœ¨åŠªåŠ›æ€è€ƒä¸­ï¼Œè¯·ç¨ç­‰â€¦â€¦";
+<div class="container">
+<h1> Áé±¦µÄĞ¡¶¯ÎïÇéĞ÷Ö§Ô®ÍÅÉÏÏßÀ²£¡</h1>
+<textarea id="userInput" rows="3" placeholder="ÄãÔÚÏëÊ²Ã´ÄØ"></textarea>
+<button onclick="getResponse()">·¢ËÍ¸øÑ×±¦</button>
+<div id="response" class="response" style="display:none;"></div>
+</div>
+<script>
+async function getResponse() {
+const input = document.getElementById("userInput").value;
+const responseBox = document.getElementById("response");
+responseBox.style.display = "block";
+responseBox.innerText = "Ñ×±¦ÕıÔÚÅ¬Á¦Ë¼¿¼ÖĞ£¬ÇëÉÔµÈ¡­¡­";
 
-      // æ¨¡æ‹Ÿæ¥å£å“åº”ï¼ˆæ­£å¼ç‰ˆå¯æ›¿æ¢ä¸º API è¯·æ±‚ï¼‰
-      setTimeout(() => {
-        responseBox.innerText = "ç‚å®çœ‹åˆ°ä½ çš„æ¶ˆæ¯å•¦ï¼š" + input + "ï¼ˆæŠ±æŠ±ä½ ~ï¼‰";
-      }, 1200);
-    }
-  </script>
+// Ä£ÄâÏìÓ¦
+setTimeout(() => {
+responseBox.innerText = "Ñ×±¦±§×ÅÄãÇáÇá»ØÓ¦£º" + input + "£¨ÃşÃşÁé±¦µÄÍ·¡«£©";
+}, 1000);
+}
+</script>
 </body>
 </html>
